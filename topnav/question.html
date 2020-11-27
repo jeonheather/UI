@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 20px;
+        }
+
+        body {
+            margin : 0px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #9cbd4f;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: #dddddd;
+            color:black;
+        }
+        nav::after {
+            content: "";
+            display: table;
+            clear:both;
+        }
+
+        /* main {
+            background-color: #f1ab75;
+            padding : 10px;
+            height: 300px;
+        } */
+
+
+        aside, section, .aside, .section {
+            float: left;
+            width: 33.3%;
+            padding: 10px;
+            height: 300px;
+            text-align: center;
+        }
+
+        .boxa { background-color: rgb(142, 198, 206);}
+        .boxb {background-color: rgb(126, 182, 199);}
+        .boxc {background-color: rgb(198, 182, 255);}
+        main::after, .main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 576px) {
+            aside {width: 100%;}
+            section {width: 100%;}
+        }
+
+        footer {
+            background-color: #f1ab75;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+<!--문제1) topnav 예제에서 중앙 컨텐츠 부분에 화면을 float을 사용하여 3등분하는 형태로 페이지를 만드세요. -->
+<!-- 화면 크기는 33.33% -->
+
+    <header>
+        <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">링크1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        
+        <aside class="boxa">사이드바</aside>
+        
+        <section class="boxb">메인 컨텐츠</section>
+        
+        <aside class="boxc">오른쪽 사이드바</aside>
+    </main>
+
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>

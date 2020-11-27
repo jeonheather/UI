@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side by side</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 20px;
+        }
+        .header {
+            background-color: rgb(157, 202, 223);
+            color : white;
+            padding: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .img-container {
+            float: left;
+            width:33.33%;
+            padding: 10px;
+        }
+
+        .img-container img{
+            width:100%
+        }
+        .img-container p {
+            color :rgb(64, 179, 233);
+            width:100%;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            box-shadow: 5px 5px 5px 5px rgb(224, 224, 224);
+        }
+        .box::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Summer Holiday</div>
+    <div class = "box">
+        <div class="img-container">
+            <img src="./images/img_5terre.jpg" alt="" style="width: 100%;">
+            <div><p>terre</p></div>
+        </div>
+        <div class="img-container">
+            <img src="./images/img_corniglia.jpg" alt="" style="width: 100%;">
+            <div><p>corniglia</p></div>
+        </div>
+        <div class="img-container">
+            <img src="./images/img_vernazza.jpg" alt="" style="width: 100%;">
+            <div><p>vernazza</p></div>
+        </div>
+        
+        <br>
+        <div class="img-container">
+            <img src="./images/img_manarola.jpg" alt="" style="width: 100%;">
+            <div><p>monarola</p></div>
+        </div>
+        <div class="img-container">
+            <img src="./images/img_corniglia.jpg" alt="" style="width: 100%;">
+            <div><p>corniglia</p></div>
+        </div>
+        <div class="img-container">
+            <img src="./images/img_riomaggiore.jpg" alt="" style="width: 100%;">
+            <div><p>riomaggiore</p></div>
+        </div>
+    </div>
+</body>
+</html>
