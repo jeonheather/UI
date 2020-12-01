@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w2scholl</title>
+</head>
+
+
+
+<style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+    
+        .subscribe {
+            float: left;
+            width: 30%;
+            /* padding: 10px; */
+            margin: 10px;
+            border: 1px solid rgb(182, 179, 179);
+            text-align: center;
+            
+        }
+
+        .header1, .header3 {
+            background-color: black;
+            margin:0px;
+            padding:20px;
+        }
+
+        .header2 {
+            background-color: rgb(98, 179, 122);
+            margin:0px;
+            padding: 20px;
+        }
+        .header1 h2, .header2 h2, .header3 h2 {
+            /*텍스트의 굵기 조절*/
+            font-weight: normal;
+            font-size: 28px;
+            color:white;
+        }
+
+        .body1 p, .body2 p, .body3 p {
+            text-align: center;
+            padding: 20px 5px;
+        }
+
+        .subscribe p span, .pay span {
+            font-weight: bold ;
+        }
+
+        .subscribe p, footer {
+            border-bottom : 1px solid rgb(182, 179, 179);}
+        .subscribe .pay p {
+            color:rgb(209, 168, 46)
+        }
+        .footer {
+            background-color: #4b423b2c;
+            padding: 20px;
+        }
+
+        .footer button {
+            background-color: rgb(91, 173, 91);
+            color:honeydew;
+            border : none;
+            font-size: 16px;
+            width: 150px;
+            height: 50px;
+            
+        }
+
+        .footer button:hover {
+            /* cursor : 마우스 포인트 속성*/
+            cursor : pointer;
+            background-color: lightblue;
+            color: white;
+        }
+
+        .subscribe:hover {
+            box-shadow: 0 0 10px rgb(194, 192, 190);
+        }
+
+
+</style>
+
+<body>
+    <h1>Reponsive Pricing Table</h1>
+<div class = subscribe>
+    <div class="header1"><h2>Basic</h2></div>
+
+<div class="body1">
+            <p><span>10GB</span> Storage</p>
+            <p><span>10</span> Emails</p>
+            <p><span>10</span> Domains</p>
+            <p><span>Endless</span> Support</p>
+        </div>
+        <div class = pay>
+            <span style ="font-size: 24px;">$10</span>
+            <p>per month</p>
+        </div>
+        <div class=footer><button class="btn3">Sign Up</button></div>
+</div>
+    
+<div class=subscribe>
+    <div class="header2">
+        <h2>Pro</h2>
+    </div>
+    <div class="body2">
+        <p><span>25GB</span> Storage</p>
+        <p><span>25</span> Emails</p>
+        <p><span>25</span> Domains</p>
+        <p><span>Endless</span> Support</p>
+    </div>
+    <div class=pay>
+        <span style="font-size: 24px;">$25</span>
+        <p>per month</p>
+    </div>
+    <div class=footer><button class="btn2">Sign Up</button></div>
+</div>
+
+
+<div class=subscribe>
+    <div class="header3">
+        <h2>Premium</h2>
+    </div>
+    <div class="body3">
+        <p><span>50GB</span> Storage</p>
+        <p><span>50</span> Emails</p>
+        <p><span>50</span> Domains</p>
+        <p><span>Endless</span> Support</p>
+    </div>
+    <div class=pay>
+        <span style="font-size: 24px;">$50</span>
+        <p>per month</p>
+    </div>
+    <div class=footer>
+        <div>
+            <button>
+                Sign UP
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

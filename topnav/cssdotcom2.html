@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssdotcom</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+        header p {
+            float: right;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: green;
+        }
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        
+        nav li a:hover {
+            background-color: white;
+            color:black;
+        }
+
+        nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .contents {
+            /* 왼쪽 사이드바 영역과 겹치는 것을 방지*/
+            margin-left: 200px;
+            padding-left: 20px;
+        }
+
+        .sidenav h3 {
+            padding-left: 16px;
+        }
+
+        .sidenav {
+            height: 600px;
+            width: 200px;
+            position: fixed;
+            top: 50;
+            left: 0;
+            z-index: 100;
+            overflow-x: hidden;
+            margin-top: 10px;
+        }
+
+        .sidenav ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sidenav a {
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: cadetblue;
+        }
+
+        .sidenav a:active {
+            background-color: coral;
+        }
+
+/*---------------------------------------------------------------------------------------*/
+
+        form > div {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+        padding: 20px;
+        background-color: rgb(98, 103, 109);
+        }
+        .contents {
+        background-color: rgb(245, 245, 245);
+         }
+
+        button {
+             background-color: green;
+             color: white;
+             border: none;
+             font-size: 16px;
+             padding: 0px;
+             /* width: 150px;
+             height: 50px; */
+    
+         }
+        button a{
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            padding: 10px;
+            color: white;
+         } 
+        /* button:hover {
+             background-color: white;
+             color:black;
+         } */
+        button > a:hover {
+             cursor : pointer;
+             background-color: white;
+             color: black;
+         }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.w3schools.com/"><img src="./images/w3schools.png" alt=""></a>
+        <p style = "font-size: 10px;">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+        <nav>
+            <!-- <a href="#">링크1</a>
+            <a href="#">링크2</a>
+            <a href="#">링크3</a> -->
+                <ul>
+                    <li><a href="./cssdotcom.html">Tutorials</a></li>
+                    <li><a href="./cssdotcom2.html">Reference</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <div class="sidenav">
+        
+        <ul>
+            <h3>References</h3>
+            <li><a href="https://www.w3schools.com/html/default.asp">HTML Tag Reference</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">HTML Color Reference</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">CSS Reference</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">CSS Selector Reference</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">W3.CSS Reference</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript Reference</a></li>
+            <li><a href="https://www.w3schools.com/sql/default.asp">PHP Reference</a></li>
+            <li><a href="https://www.w3schools.com/php/default.asp">SQL Reference</a></li>
+        </ul>
+    </div>
+
+    <form action="">
+    <div class="contents">
+        <h1>CSS</h1>
+        <h3>The Language for Styling Web Pages</h3>
+        <button><a href="https://www.w3schools.com/css/default.asp" >LEARN CSS</a></button>
+        <button><a href="https://www.w3schools.com/cssref/default.asp">CSS REFERENCE</a></button>
+
+        <p style="border-left: 5px solid green;">body { <br>
+            background-color: #d0e4fe;<br>
+        } <br>
+        h1 { <br>
+            color: orange; <br>
+            text-align: center; <br>
+        } <br>
+        p { <br>
+            font-family: "Times New Roman";<br>
+            font-size: 20px;<br>
+        }</p><br>
+        <button><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default">Try It Yourself</a></button>
+    </div>  
+</form>
+
+<form action="">
+    <div class="contents">
+        <h1>JS</h1>
+        <h3>The Language for Programming Web Pages</h3>
+        <button> <a href="https://www.w3schools.com/js/default.asp">Java Script</a></button>
+        <button><a href="https://www.w3schools.com/jsref/default.asp">JS REFERENCE</a></button>
+
+        <p style="border-left: 5px solid green;">// Click the button to change the color of this paragraph <br>
+
+            function myFunction() { <br>
+                var x; <br>
+                x = document.getElementById("demo"); <br>
+                x.style.fontSize = "25px"; <br>
+                x.style.color = "red"; <br>
+            } <br>
+        } <br></p>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_default">Try It Yourself</a></button>
+    </div>  
+</form>
+
+    <main>
+        <section>
+            <article>
+                <div></div>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>

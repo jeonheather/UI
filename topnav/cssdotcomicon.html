@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iconCSSdotcom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+        }
+        header {
+            text-align: center;
+            background-color: teal;
+            color: white;
+            float: right;
+            /* width: 82.6%; */
+            width: 80%;
+            height: 200px;
+            /* height: 102px; */
+            font-size: 64px;
+            padding-top:40px
+            /* z-index: 2; */
+            
+        }
+        body {
+            margin: 0px;
+            border: 0px;
+        }
+
+        .contents {
+            /* 왼쪽 사이드바 영역과 겹치는 것을 방지 */
+            margin-left: 350px;
+            padding-left: 20px;
+        }
+
+        .topnav ul {
+            list-style-type: none;
+            margin:0px;
+            padding: 0px;
+            /* overflow: hidden; */
+            width: 30%;
+        }
+
+        .topnav ul a{
+            float: left;
+        }
+
+        .topnav ul i {
+            display: inline-block;
+            color : white;
+            text-align: center;
+            /* text-decoration: none; */
+            border: none;
+            padding: 35px;
+            margin-right: 0px;
+        }
+        .fa {
+            background-color: black;
+            padding: 10px;
+        }
+        .topnav .fa:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .topnav::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+/*-----------------------------------------------------------------------------------------*/
+        .sidenav {
+            margin-top: 100px;
+            height : 700px;
+            width : 350px;
+            position: fixed;
+            top:0;
+            left:0;
+            /* z-index: 100; */
+           
+            overflow-x: hidden;
+        }
+
+
+        .sidenav ul {
+            margin: 0;
+            list-style-type: none;
+            padding: 0px;
+            display: block;
+        
+        }
+
+        .sidenav a {
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            color: black;
+            padding: 10px 16px;
+        }
+
+        .sidenav a:hover {
+            background-color: black;
+            color: white;
+            /* z-index: 1; */
+        }
+        .sidenav a:active {
+            background-color: turquoise;
+        }
+/*-----------------------------------------------------------------------*/
+        form > div {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(98, 103, 109);
+        }
+        .contents {
+            background-color: rgb(229, 226, 226);
+            width: 78%;
+            
+        }
+        
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            font-size: 16px;
+            padding: 0px;
+        }
+
+        button a {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+
+        button a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .sidenav .sideimg {
+            border-bottom: 1px solid rgb(209, 207, 207);
+        }
+        .maintext {
+            background-color: white;
+        }
+        .textBox {
+            border-style: solid; border-width: 0 0 0 8px; padding: 12px; word-break: break-all;
+            border-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <header>w3schools.com</header>
+</div>
+    <div class="topnav">
+        <ul>
+        <a href=""><i class="fa fa-align-justify" style="font-size: 32px;"></i></a>
+        <a href=""><i class="fa fa-save"  style="font-size: 32px;"></i></a>
+        <a href=""><i class="fa fa-camera"  style="font-size: 32px;"></i></a><br>
+    </ul>
+    </div>
+
+    <div class="sidenav">
+        <ul>
+            <a class="sideimg" href=""><img src="./images/w3schools.png" alt=""></a>
+            <li><a href="#">Learn HTML</a></li>
+            <li><a href="#">Learn W3.CSS</a></li>
+            <li><a href="#">Learn JavaScript</a></li>
+            <li><a href="#">Learn SQL</a></li>
+            <li><a href="#">Learn PHP</a></li>
+        </ul>
+    </div>
+
+    <form action="">
+    <div class="contents">
+        <h1>CSS</h1>
+        <h4>The Language for Styling Web Pages</h4>
+        <button><a href="https://www.w3schools.com/css/default.asp">LEARN CSS</a></button>
+        <button><a href="https://www.w3schools.com/cssref/default.asp">CSS REFERENCE</a></button>
+        <div class="maintext">
+        <p class="textBox">메인 컨텐츠가 들어갈 자리</p>
+        </div>
+        <button><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default">Try It Yourself</a></button>
+    </div>
+</form>
+</body>
+</html>

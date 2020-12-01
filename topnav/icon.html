@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        border: 0px;
+    }
+    /* text-align 속성은 후손태그들에게 상속됨*/
+    form { text-align: center;}
+    form > div {
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+        padding: 20px;
+        background-color: lightslategray;
+    }
+    .full {
+        background-color: rgb(239, 239, 250);
+    }
+
+    .header h2 {
+        font-size: 32px;
+        color: cornflowerblue;
+        text-align: center;
+    }
+
+    .input-icon {
+        width: 30px;
+        float:left;
+        
+    }
+    /* .box {
+        border:0px;
+        margin:0px;
+        float: none;
+    } */
+
+    .input-text input {
+        width:100%;
+    }
+
+    .input-text {
+         
+        width: 90%;
+        /*overflow: hidden; */
+        float: left;
+        padding: 8px;
+
+        /* border: 1px solid black; */
+    }
+
+    .footer button{
+            background-color: cornflowerblue;
+            color:white;
+            border : none;
+            font-size: 16px;
+            width: 150px;
+            height: 50px;
+            /* margin:0px auto;
+            display: inline-block;    */
+                 
+        }
+
+    .footer button:hover {
+            /* cursor : 마우스 포인트 속성*/
+            cursor : pointer;
+            background-color: lightblue;
+            color: white;
+        }
+
+        .box1::after, .box2::after, .box3::after, .box4::after, .box5::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+/*font-weight : 속성은 100 ~ 900까지 , 기본값/normal/400/bold/700*/
+</style>
+<body>
+    <form action="">
+            <div class="full">
+        <div class="header">
+             <h2>Contact Us</h2>
+        </div>
+        
+        <!--input 태그와 icon을 사용하기 위한 div-->
+            <div class="box1">
+                <!--icon을 사용하기 위한 div, 다른 아이콘을 동일한 너비를 가지도록 하기 위해서 크기를 고정-->
+                <div class="input-icon">
+                    <i class="fa fa-user" style="font-size: 32px; color: cornflowerblue;"></i>
+                </div>
+                <!--사용자 입력을 받는 input 태그를 감싸는 div, 하나의 라인 전체를 사용하는 input 태그를 만들기 위한 div-->
+                <div class="input-text">
+                    <!-- input의 display 속성을 block 변경 width : 100%로 설정-->
+                    <input type="text" placeholder="First name">
+                </div>
+            </div>
+            
+            <div class="box2">
+                <div class="input-icon">
+                <i class="fa fa-user" style="font-size: 32px; color: cornflowerblue;"></i>
+            </div>
+                <div class="input-text">
+                    <input type="text" placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="input-icon">
+                <i class="fa fa-newspaper-o" style="font-size: 32px; color: cornflowerblue;"></i>
+            </div>
+                <div class="input-text">
+                    <input type="text" placeholder="E-mail">
+                </div>
+            </div>
+
+            <div class="box4">
+                <div class="input-icon">
+                <i class="fa fa-mobile-phone" style="font-size: 32px; color: cornflowerblue;"></i>
+            </div>
+                <div class="input-text">
+                    <input type="text" placeholder="Phone">
+                </div>
+            </div>
+
+            <div class="box5">
+                <div class="input-icon">
+                <i class="fa fa-pencil" style="font-size: 32px; color: cornflowerblue;"></i>
+            </div>
+            <div class="input-text">
+                    <input type="text" placeholder="Message">
+                </div>
+   
+            </div>
+            <div class="footer">
+                <button>Submit</button>
+            </div>    
+    </div>
+</form>
+
+</body>
+
+</html>

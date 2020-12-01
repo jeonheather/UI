@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            background-color: whitesmoke;
+            top: 0;
+            left: 0;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            /* background-color: whitesmoke; */
+        }
+
+        .top-left{
+            float : left;
+        }
+
+        .top-right {
+            float : right;
+        }
+
+        nav li a{
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: gray;
+        }
+        nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* main {
+            margin-top: 500px;
+        } */
+        .mainPic img{
+            margin-top: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            width : 100%;
+            
+            
+        }
+
+        h1 {
+            position: absolute;
+            color: gray;
+            top: 450px;
+            left: 200x;
+            width: 100%;
+            margin: 0 auto;
+            width: 300px;
+            height: 50px;
+            }
+
+        /*display : block 인 태그를 width의 크기를 지정하고 margin값 중 left, right를 auto로 주면 중앙 정렬 됨*/
+        section {
+            width: 960px;
+            /*공식*/
+            margin: 0 auto;
+        }
+
+        .box-left {
+            margin-top: 20px;
+            float: left;
+        }
+
+        .box-left::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .box-right img {
+            margin-top: 20px;
+            float: right;
+            width: 50%;
+        }
+
+        .box-right::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class = "top-left"><a href="">Gourmet au Catering</a></li>
+                <li class = "top-right"><a href="">About</a></li>
+                <li class = "top-right"><a href="">Menu</a></li>
+                <li class = "top-right"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="mainPic">
+                <img src="./images/burgur2.jpg" alt="">
+                <div>
+                    <h1>Le Catering</h1>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+        <section>
+            <div class="box-left">
+                <img src="./images/plates.jpg" alt="">
+            </div>
+            <div>
+                <h2>About Catering</h2>
+                <h4>Tradition since 1889</h4>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    We only use seasonal ingredients.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+        <!--Menu-->
+        <section>
+            <div class="box-right">
+                <img src="./images/lemon.jpg" alt="">
+            </div class="right-text">
+            <h2>Our Menu</h2>
+            <h4>Bread Basket</h4>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            
+            <h4>Belgian Waffle</h4>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            
+            <h4>Scrambled eggs</h4>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            
+            <h4>Blueberry Pancakes</h4>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </section>
+        <!--Contact-->
+        <section>
+            <div class="box-contact">
+            <h2>Contact</h2>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. 
+                Do not hesitate to contact us.</p>
+            <h4>Catering Service, 42nd Living St, 43043 New York, NY</h4>        
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        </div>
+            <div>
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="How many people"><br>
+                <input type="datetime-local"><br>
+                <input type="text" placeholder="Message / Special Requirement"><br>
+                <input type="submit" value="send message">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>made by <span>J</span></p>
+    </footer>
+</body>
+</html>

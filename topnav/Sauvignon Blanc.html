@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteWines</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Playfair Display', serif;
+
+    }
+
+    header {
+        background-color: lightseagreen;
+        /* font-weight: bold/700하고 동일 normal/400하고 동일*/
+        font-size: 32px;
+        padding: 20px;
+    }
+    a { text-decoration:none } 
+
+    .img {
+        float: left;
+        margin: 20px;
+        width: 50%;
+    }
+    /*태그명이 img이면서 클래스명이 picgrape인 태그를 선택*/
+    /* 이미지의 크기를 최대로 사용*/
+    img.picgrape {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .img h2 {
+        padding: 20px;   
+    }
+
+    table {
+    width: 100%;
+    /*table의 각각의 column의 인접 테두리선을 하나로 합하여 줌*/
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 20px;
+    }
+    /* nth-child 사용 시 짝수 혹은 홀수별로 선택하기 위한 선택자*/
+    table tbody tr:nth-child(even) { /*odd : 홀수, even : 짝수*/
+        background-color: whitesmoke;
+    }
+    thead{
+        background-color: lightseagreen;
+        color: white;
+    }
+    tr{
+        height: 50px;
+        text-align: left;
+    }
+    th, td {
+    padding: 10px;
+    /* border: 1px solid #c9c4c4; */
+    }
+    /*메인 컨텐츠 영영을 좌측, 우측 나누어 사용한 것을 제거함*/
+    img::after {
+        content: "";
+        display: table;
+        clear : both;
+    }
+
+    .text {
+        float: left;
+        margin: 20px;
+        width: 30%;
+    }
+
+    .text h2 {
+        padding: 10px;
+    }
+</style>
+<body>
+        <header>
+            <!--nav : div와 동일한 태그, 네비게이션 바 및 메뉴바를 표시하는 태그-->
+            <a href="Chardonnay.html" style="color: white;">White Wines - Sauvignor Blanc</a><br>
+            <a href="Chardonnay.html" style="color: white;">&#171;</a>
+        </header>
+    
+
+        <main>
+            <section>
+                <article>
+                    <div class="img">
+                        <img src="./images/Chardonnay.jpg" alt="" class="picgrape">
+                        <h2>Sauvignon Blanc</h2>
+                        <div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Food</th>
+                                        <th>type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Seafood</td>
+                                        <td>Fish</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Meat</td>
+                                        <td>Chicken, Pork, Veal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vegan</td>
+                                        <td>Herbed goat cheese</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other</td>
+                                        <td>Mexican, Vietnamese</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                            <h2>Flavour</h2>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Age</th>
+                                    <th>Flavour</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Less Ripe</td>
+                                    <td>Green Plum, Green Apple, Pear</td>
+                                </tr>
+                                <tr>
+                                    <td>Medium</td>
+                                    <td>Lemon, Peach, Melon</td>
+                                </tr>
+                                <tr>
+                                    <td>More Ripe</td>
+                                    <td>Pineapple, Fig, Banana, Mango</td>
+                                </tr>
+                                <tr>
+                                    <td>Oaked</td>
+                                    <td>added Cream or Butter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+ 
+
+                        <h2>Neighbours</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Neighbours</th>
+                                    <th>Flavour</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pinot Grisd</td>
+                                    <td>	Like under-riped Chardonnay</td>
+                                </tr>
+                                <tr>
+                                    <td>Semillion</td>
+                                    <td>Lighter with more lemon</td>
+                                </tr>
+                                <tr>
+                                    <td>Viognier</td>
+                                    <td>More Vanilla, Flowers or Perfume</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    </div>
+                    <div class="text">
+                        <h2>Chardonnay</h2>
+                        <p>Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes). 
+                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit is the first known version ("Neither is there anyone who loves grief itself since it is grief and thus wants to obtain it").
+                            <br><br>It was found by Richard McClintock, a philologist, director of publications at Hampden-Sydney College in Virginia; 
+                            he searched for citings of consectetur in classical Latin literature, a term of remarkably low frequency in that literary corpus.<br><br>
+
+                            Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline is taken for type specimens: Quo usque tandem abutere, Catilina, patientia nostra?
+                            <br>Quam diu etiam furor iste tuus nos eludet? (How long, O Catiline, will you abuse our patience? And for how long will that madness of yours mock us?)<br><br>
+                            
+                            <br>Cicero's version of Liber Primus (first Book), sections 1.10.32–3 (fragments included in most Lorem Ipsum variants in red):</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+</body>
+</html>
