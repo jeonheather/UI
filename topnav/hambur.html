@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200&display=swap" rel="stylesheet">
 
     <style>
         * {
             box-sizing: border-box;
             margin: 0px;
             padding: 0px;
+            font-family: 'Epilogue', sans-serif;
         }
 
         html {
@@ -68,7 +69,7 @@
             margin-top: 15px;
             margin-bottom: 20px;
             text-align: center;
-            width : 100%;
+           width: 100%;
             
             
         }
@@ -76,8 +77,7 @@
         h1 {
             position: absolute;
             color: gray;
-            top: 450px;
-            left: 200x;
+            top: 710px;
             width: 100%;
             margin: 0 auto;
             width: 300px;
@@ -87,12 +87,20 @@
         /*display : block 인 태그를 width의 크기를 지정하고 margin값 중 left, right를 auto로 주면 중앙 정렬 됨*/
         section {
             width: 960px;
-            /*공식*/
             margin: 0 auto;
         }
 
+        .section1{
+            width : 1500px;
+            height: 800px;
+        }
+        .section2, .section3 {
+            height: 900px;
+            border-bottom: 1px solid rgb(233, 229, 229);
+        }
         .box-left {
             margin-top: 20px;
+            margin-right: 10px;
             float: left;
         }
 
@@ -101,19 +109,61 @@
             display: table;
             clear: both;
         }
-        
+
+       
+        .box-right {
+            margin-top: 20px;
+            float: right;
+        }
+        .box-contact {
+            padding-top: 100px;
+            padding-bottom: 50px;
+            
+            border-bottom: 1px solid rgb(233, 229, 229);
+        }
+
+        .box-contact h4 {
+            color: rgb(117, 125, 173);
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-bottom: 1px solid rgb(233, 229, 229);
+        }
+
+
+        footer {
+            margin-top: 50px;
+            width: 100%;
+            padding: 50px;
+            background-color: rgb(233, 229, 229);
+            text-align: center;
+        }
+
+/*         
+        .box-right {
+            width : 750px;
+            height: 750px;
+            margin-right: 0px;
+        }
         .box-right img {
             margin-top: 20px;
             float: right;
-            width: 50%;
+            
+        
         }
-
+        
+        .right-text {
+            width: 50%;
+        
+        }
         .box-right::after {
             content: "";
             display: table;
             clear: both;
-        }
-
+        } */
     </style>
 </head>
 
@@ -122,15 +172,15 @@
         <nav>
             <ul>
                 <li class = "top-left"><a href="">Gourmet au Catering</a></li>
-                <li class = "top-right"><a href="">About</a></li>
-                <li class = "top-right"><a href="">Menu</a></li>
                 <li class = "top-right"><a href="">Contact</a></li>
+                <li class = "top-right"><a href="">Menu</a></li>
+                <li class = "top-right"><a href="">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="section1">
             <div class="mainPic">
                 <img src="./images/burgur2.jpg" alt="">
                 <div>
@@ -139,58 +189,67 @@
             </div>
         </section>
         <!--About-->
-        <section>
+        <section class="section2">
             <div class="box-left">
                 <img src="./images/plates.jpg" alt="">
             </div>
-            <div>
-                <h2>About Catering</h2>
-                <h4>Tradition since 1889</h4>
+            <div class="left-text">
+                <br><br><h2>About Catering</h2><br><br><br>
+                <h4>Tradition since 1889</h4><br><br>
                 <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    We only use seasonal ingredients.</p>
+                    We only use seasonal ingredients.</p><br>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
                     sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </section>
         <!--Menu-->
-        <section>
+        <section class="section3">
             <div class="box-right">
                 <img src="./images/lemon.jpg" alt="">
-            </div class="right-text">
-            <h2>Our Menu</h2>
-            <h4>Bread Basket</h4>
-            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+        
+            <div class="right-text">
+                <br><br><h2>Our Menu</h2><br><br><br>
+                <h4>Bread Basket</h4><br>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br><br>
 
-            <h4>Honey Almond Granola with Fruits</h4>
-            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-            
-            <h4>Belgian Waffle</h4>
-            <p>Vanilla flavored batter with malted flour 7.50</p>
-            
-            <h4>Scrambled eggs</h4>
-            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-            
-            <h4>Blueberry Pancakes</h4>
-            <p>With syrup, butter and lots of berries 8.50</p>
+                <h4>Honey Almond Granola with Fruits</h4><br>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br><br>
+                
+                <h4>Belgian Waffle</h4><br>
+                <p>Vanilla flavored batter with malted flour 7.50</p><br><br>
+                
+                <h4>Scrambled eggs</h4><br>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br><br>
+                
+                <h4>Blueberry Pancakes</h4><br>
+                <p>With syrup, butter and lots of berries 8.50</p><br>
+        </div>
         </section>
         <!--Contact-->
         <section>
             <div class="box-contact">
-            <h2>Contact</h2>
+            <h2>Contact</h2><br><br>
             <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. 
-                Do not hesitate to contact us.</p>
-            <h4>Catering Service, 42nd Living St, 43043 New York, NY</h4>        
+                Do not hesitate to contact us.</p><br>
+            <h4>Catering Service, 42nd Living St, 43043 New York, NY</h4><br>  
             <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
         </div>
             <div>
                 <input type="text" placeholder="Name"><br>
-                <input type="text" placeholder="How many people"><br>
+                <input type="number" placeholder="How many people" name="" id=""><br>
                 <input type="datetime-local"><br>
-                <input type="text" placeholder="Message / Special Requirement"><br>
-                <input type="submit" value="send message">
+                <input type="text" placeholder="Message / Special Requirement"><br><br>
+                
+            </div>
+            <div>
+                <input type="button" value="send message" style="color: black; background-color: rgb(233, 229, 229); 
+                width: 150px; height: 40px;">
             </div>
         </section>
+       
+        
     </main>
 
     <footer>

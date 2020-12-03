@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+           text-align: center;
+        }
+
+        /* display : block 인 태그를 width 값을 주고 margin의 left right를 auto로 주게 되면 중앙 정렬
+            .box {
+                width:600px;
+                margin:0 auto;
+            }
+        
+        
+        */
+
+        header {
+            color: green;
+            font-size: 3em;
+        }
+        .test input{
+            font-size: 24px;
+            background-color: rgb(248, 250, 250);
+            border: 0.1px solid gray;
+            text-align: left;
+        }
+        .test2 button{
+                background-color: green;
+                padding: 10px;
+                border: none;
+                width: 17%;
+            }
+        @media screen and (max-width: 1200px){
+            .test input {
+                font-size: 64px;
+                background-color: orange;
+                text-align: left;
+            }
+            .test2 button{
+                background-color: rgb(168, 183, 184);
+                padding: 10px;
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 966px){
+            .test input {
+                font-size: 32px;
+                background-color: orangered;
+                text-align: left;
+            }
+            .test2 button{
+                background-color: rgb(182, 215, 216);
+                padding: 10px;
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            .test input {
+                font-size: 24px;
+                background-color: orchid;
+                text-align: left;
+            }
+            .test2 button{
+                background-color: rgb(42, 210, 216);
+                padding: 10px;
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 567px){
+            .test input {
+                font-size: 16px;
+                background-color: palegoldenrod;
+                text-align: left;
+            }
+            .test2 button{
+                background-color: cadetblue;
+                padding: 10px;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--문제 1. 특정 사이트에 로그인하기 위한 id 및 pw 입력창을 만들고, 로그인 버튼도 생성하세요-->
+    <!--ps. 화면의 크기에 따라 id/pw창의 글자 크기가 변경됨
+    ps. 화면의 크기는 768px 을 기준으로 함
+    ps. 폰트의 크기는 32px, 16px을 사용
+    ps. 다른 CSS 속성은 마음대로 추가-->
+
+        <header>
+            <h1>NAVER</h1>
+        </header>
+    <div class="test">
+        <input type="text" placeholder="ID"><br><br>
+        <input type="password" name="" id="" placeholder="password"><br><br>
+    </div>
+    <div class="test2">
+    <button type="submit">login</button>
+</div>
+</body>
+</html>
