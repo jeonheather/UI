@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="./css/comingsoon.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <script>
+        $(document).ready(function(){
+                $("#center >h1").slideDown(); //slow 부분에 숫자 0 이 들어가면 바로 열림 (숫자가 적을수록 빠름)
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="comingsoon">
+        <div class="logo">
+            <p>Logo</p>
+        </div>
+
+        <div id="center"> <!--너비50 마진 0 auto-->
+            <h1>COMING SOON</h1>
+            <br><hr><br>
+            <p>35 days left</p>
+        </div>
+
+        <div class="produce">
+            <p>produce by J</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -28,7 +28,7 @@
 
     </style>
 
-    <link rel="stylesheet" href="./flexbox1.css">
+    <link rel="stylesheet" href="./css/flexbox1.css">
 </head>
 <body>
     <h3>기본값</h3>
@@ -213,39 +213,149 @@
         <br><hr><br>
 
         <div id="div07">
+            
             <h3>align-item : flex-center</h3>
             <div class="flex-container2 vertical-center">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>
-                </div>    
+            </div>    
+            
             <h3>align-item : flex-start</h3>
             <div class="flex-container2 vertical-start">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>
             </div>
+            
             <h3>align-item : flex-end</h3>
             <div class="flex-container2 vertical-end">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>
             </div>
+            
             <h3>align-item : flex-stretch</h3>
             <div class="flex-container2 stretch">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>
             </div>
+            
             <h3>align-item : flex-baseline</h3>
             <div class="flex-container2 baseline">
                 <div><h1>1</h1></div>
                 <div><h6>2</h6></div>
                 <div><h4>3</h4></div>
-                <div><small>4</small></div>
+                <div><small>4</small>
             </div>
+        </div>
+
+            <br><hr><br>
+
+
+
+            <div id="div08">
+                <h3>align-content : space-between</h3>
+                <div class="flex-container3 space-between">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>                
             </div>
 
+
+            <h3>align-content : space-around</h3>
+                <div class="flex-container3 space-around">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>                
+            </div>
+
+            <h3>align-content : stretch</h3>
+                <div class="flex-container3 stretch">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>                
+            </div>
+
+            <h3>align-content : center</h3>
+                <div class="flex-container3 center">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>                
+            </div>
+
+            <h3>align-content : flex-start</h3>
+                <div class="flex-container3 flex-start">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>                
+            </div>
+
+            
+            <h3>align-content : flex-end</h3>
+                <div class="flex-container3 flex-end">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>                
+            </div>
+        </div>
+    </body>
+    </html>        
             <!--
                 반응형 웹 사용시 이미지 출력 방법
 	-기존의 이미지 출력 방식을 사용하게 되면 반응형 웹 적용 시 이미지의 크기가 고정되어 있어 제대로 표현되지 않을 가능성이 높다
@@ -276,5 +386,3 @@ flexbox의 속성
 	-align-items : 자손 태그의 정렬 방식 설정 (세로 정렬), center(중앙 정렬), flex-start (상단 정렬), flex-end(하단 정렬), stretch(상하단 정렬, 높이를 전체 다 사용), baseline(여러개의 자손 태그가 존재할 경우 여러 자손 태그의 텍스트 기준선을 따라 정렬)
 	-align-content : 자손 태그가 여러줄 일 경우 라인의 위치를 설정, space-between(상하단 양끝 정렬, 양끝에 공간 없음), space-around(상하단 양끝 정렬, 양끝에 공간 확보),stretch(상하단 양끝 정렬 및 모든 공간 채움), center(중앙 정렬), flex-start(상단 정렬), flex-end(하단 정렬)
             -->
-</body>
-</html>

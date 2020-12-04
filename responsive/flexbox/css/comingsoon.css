@@ -1,0 +1,26 @@
+* {box-sizing: border-box;}
+
+body {
+    background-image: url(./nature2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#center {
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: 320px auto;
+}
+
+.logo {
+    color: white;
+}
+
+.produce {
+    color: white;
+}
+
+hr {
+    width: 170px;
+}

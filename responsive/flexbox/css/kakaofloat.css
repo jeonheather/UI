@@ -1,0 +1,29 @@
+*{ box-sizing: border-box;}
+
+body {margin: 0;}
+
+section {
+    width: 100%;
+}
+
+.box01, .box02, .box03, .box04 {
+    float: left;
+    width: 25%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 768px) {
+    .box01, .box02, .box03, .box04 {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .box01, .box02, .box03, .box04 {
+        width: 100%;
+    }
+}

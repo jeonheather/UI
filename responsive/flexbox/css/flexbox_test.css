@@ -1,0 +1,92 @@
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: mediumseagreen;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkorchid;   
+}
+nav li {
+    float: left;
+}
+nav li > a {
+    display: inline-block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li >a:hover {
+    background-color: thistle;
+    color: black;
+
+}
+
+footer {
+    background-color: moccasin;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(44, 117, 181);   
+}
+
+aside {
+    float: left;
+    background-color: mistyrose;
+    width: 30%;
+    padding: 20px;
+    height: 1339.75px;
+}
+
+section {
+    background-color: aliceblue;
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 100%;
+}
+
+.fake-img {
+    background-color: oldlace;
+    width: 100%;
+    padding: 20px;
+}
+
+.photo-me { height: 200px; }
+
+.photo-link { height: 60px; }
+
+.photo-post { height: 200px;}
+
+article {background-color: snow;
+    margin-bottom: 10px ;
+    padding: 10px;}
+
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    @media all and (max-width: 576px) {
+        aside, nav li, section{
+            width: 100%;
+        /* float 사용 시 main의 자손 태그인 aside, section의 width를 100%로 변경*/
+        }
+    }

@@ -1,0 +1,33 @@
+* {box-sizing: border-box;}
+
+body { margin: 0;}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box01, .box02, .box03, .box04 {
+    overflow: hidden;
+    flex: 25%
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width:768px) {
+    .box01, .box02, .box03, .box04 {
+        flex: 50%;
+}
+}
+
+@media all and (max-width: 576px) {
+    .box01, .box02, .box03, .box04 {
+        flex: 100%;
+    }
+}
